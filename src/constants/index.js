@@ -47,7 +47,7 @@ export const myProjects = [
   {
     id: 51,
     title: "Spyfall game",
-    img: "/assets/Spy-fall2.png",
+    img: "/assets/spy-fall2.PNG",
     hoverImg: "/assets/Spy-fall.png",
     source_code_link: "https://github.com/amirlrz/spyfall-Game",
     Link: "https://spyfall.liara.run/",
@@ -108,7 +108,7 @@ Developed responsive UI components and managed global state for smooth user expe
 Integrated REST APIs for authentication, data management, and internal workflows.
 Contributed to digitizing administrative processes, improving efficiency and scalability.
     `,
-    img: "/assets/erp1.jpg",
+    img: "/assets/erp1.JPG",
     hoverImg: "/assets/erp2.jpg",
     tags: [
       {
