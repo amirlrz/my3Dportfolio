@@ -48,7 +48,7 @@ export const myProjects = [
     id: 51,
     title: "Spyfall game",
     img: "/assets/spy-fall2.PNG",
-    hoverImg: "/assets/Spy-fall.png",
+    hoverImg: "/assets/spy-fall.png",
     source_code_link: "https://github.com/amirlrz/spyfall-Game",
     Link: "https://spyfall.liara.run/",
     description: `
@@ -109,7 +109,7 @@ Integrated REST APIs for authentication, data management, and internal workflows
 Contributed to digitizing administrative processes, improving efficiency and scalability.
     `,
     img: "/assets/erp1.JPG",
-    hoverImg: "/assets/erp2.jpg",
+    hoverImg: "/assets/erp2.JPG",
     tags: [
       {
         name: "next.js",

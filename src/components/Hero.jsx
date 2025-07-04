@@ -29,7 +29,7 @@ mt-5
           </p>
         </div>
       </div>
-      <ComputerCanvas />
+      {/* <ComputerCanvas /> */}
       <div
         className="absolute max-sm:bottom-20  bottom-5 w-full flex justify-center
       items-center
