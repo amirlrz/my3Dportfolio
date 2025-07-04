@@ -26,6 +26,7 @@ export const myProjects = [
   Responsive UI with Tailwind CSS
     `,
     img: "/assets/weatherApp.png",
+    hoverImg: "/assets/weather2.png",
     source_code_link: "https://github.com/amirlrz/weather-app",
     Link: "",
     tags: [
@@ -46,9 +47,18 @@ export const myProjects = [
   {
     id: 51,
     title: "Spyfall game",
-    img: "/assets/Spy-fall.png",
+    img: "/assets/Spy-fall2.png",
+    hoverImg: "/assets/Spy-fall.png",
     source_code_link: "https://github.com/amirlrz/spyfall-Game",
     Link: "https://spyfall.liara.run/",
+    description: `
+ A multiplayer web-based game built with React 
+Implemented manual data setup for game locations and roles.
+Players can see the number of participants, topic/location, and a countdown timer.
+One player is randomly assigned as the spy, while others try to guess who it is before time runs out.
+Designed responsive UI for desktop and mobile devices.
+Focused on state management, user interactions, and game logic using React hooks.`,
+
     tags: [
       {
         name: "react.js12",
@@ -73,6 +83,7 @@ export const myProjects = [
     img: "/assets/giyumeh1.png",
     Link: "https://lrz-store.liara.run",
     source_code_link: "https://github.com/amirlrz/Coffee-store",
+    hoverImg: "/assets/coffe2.png",
     tags: [
       {
         name: "next.js1",
@@ -84,6 +95,32 @@ export const myProjects = [
       },
       {
         name: "supabase12",
+        color: "#8e0569",
+      },
+    ],
+  },
+  {
+    id: 61,
+    title: " Internal ERP System",
+    description: `
+Built a web-based ERP platform for internal staff operations using Next.js and Redux Toolkit.
+Developed responsive UI components and managed global state for smooth user experience.
+Integrated REST APIs for authentication, data management, and internal workflows.
+Contributed to digitizing administrative processes, improving efficiency and scalability.
+    `,
+    img: "/assets/erp1.jpg",
+    hoverImg: "/assets/erp2.jpg",
+    tags: [
+      {
+        name: "next.js",
+        color: "#5a30b6",
+      },
+      {
+        name: "mui",
+        color: "#06945b",
+      },
+      {
+        name: "redux",
         color: "#8e0569",
       },
     ],

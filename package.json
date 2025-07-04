@@ -14,7 +14,7 @@
     "@testing-library/user-event": "^14.5.2",
     "autoprefixer": "^10.4.21",
     "emailjs-com": "^3.2.0",
-    "framer-motion": "^11.0.3",
+    "framer-motion": "^11.18.2",
     "gsap": "^3.12.7",
     "leva": "^0.10.0",
     "maath": "^0.10.8",
@@ -31,6 +31,7 @@
     "react-toastify": "^11.0.5",
     "react-vertical-timeline-component": "^3.5.3",
     "three": "^0.161.0",
+    "three-stdlib": "^2.36.0",
     "web-vitals": "^2.1.4",
     "yup": "^1.6.1"
   },

@@ -1,21 +1,35 @@
 import React, { Suspense, useEffect, useState, useRef } from "react";
-import { Canvas } from "@react-three/fiber";
-import {
-  OrbitControls,
-  Preload,
-  useGLTF,
-  Environment,
-  Html,
-} from "@react-three/drei";
+import { Canvas, useLoader } from "@react-three/fiber";
+import { OrbitControls, Preload, Environment, Html } from "@react-three/drei";
 import Loader from "./Loader";
+import { DRACOLoader, GLTFLoader } from "three-stdlib";
 
 // Computer Model Component
 const ComputerModel = ({ isMobile }) => {
-  const { scene } = useGLTF(
-    "./models/desktop/scene.gltf",
-    true // <-- Enable draco loader by default
-  );
+  const useDracoGLTF = (path) => {
+    const loader = useLoader(GLTFLoader, path, (loader) => {
+      const dracoLoader = new DRACOLoader();
+      dracoLoader.setDecoderPath("/draco"); // حتما پوشه draco را داخل public بذار
+      loader.setDRACOLoader(dracoLoader);
+      console.log("✅ Draco loader activated!");
+    });
+    return loader;
+  };
+
+  const { scene } = useDracoGLTF("./models/desktop/scene.gltf");
+
   const groupRef = useRef();
+  useEffect(() => {
+    return () => {
+      scene.traverse((child) => {
+        if (child.isMesh) {
+          child.geometry?.dispose?.();
+          if (child.material.map) child.material.map.dispose?.();
+          child.material?.dispose?.();
+        }
+      });
+    };
+  }, [scene]);
 
   // Scale down materials for mobile
   useEffect(() => {
@@ -27,6 +41,49 @@ const ComputerModel = ({ isMobile }) => {
         }
       });
     }
+  }, [scene, isMobile]);
+  useEffect(() => {
+    scene.traverse((child) => {
+      if (child.isMesh) {
+        const posAttr = child.geometry?.attributes?.position;
+        if (!posAttr || !posAttr.count) {
+          console.warn("Invalid mesh geometry: ", child.name);
+          child.visible = false; // یا scene.remove(child)
+          return;
+        }
+
+        // کاهش shader complexity برای موبایل
+        if (isMobile) {
+          child.material.roughness = 1;
+          child.material.metalness = 0;
+        }
+      }
+    });
+  }, [scene, isMobile]);
+
+  useEffect(() => {
+    scene.traverse((child) => {
+      if (child.isMesh) {
+        const posAttr = child.geometry?.attributes?.position;
+        const valid =
+          posAttr &&
+          posAttr.isBufferAttribute &&
+          Number.isInteger(posAttr.count) &&
+          posAttr.count * posAttr.itemSize === posAttr.array.length;
+
+        if (!valid) {
+          console.warn("Invalid mesh removed:", child.name);
+          child.visible = false;
+          return;
+        }
+
+        // Mobile optimization
+        if (isMobile) {
+          child.material.roughness = 1;
+          child.material.metalness = 0;
+        }
+      }
+    });
   }, [scene, isMobile]);
 
   return (
@@ -91,8 +148,8 @@ const ComputersCanvas = () => {
   return (
     <Canvas
       frameloop="demand"
-      shadows={!isMobile} // Disable shadows on mobile
-      dpr={Math.min(window.devicePixelRatio, 2)} // Cap DPR at 2 for performance
+      shadows={false} // Disable shadows on mobile
+      dpr={Math.min(window.devicePixelRatio, 1.2)} // Cap DPR at 2 for performance
       camera={{
         position: [20, 3, 5],
         fov: 25,

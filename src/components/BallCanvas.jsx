@@ -9,6 +9,7 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
+import Loader2 from "./Loader2";
 
 const BallCanvas = (props) => {
   const [decal] = useTexture([props.imgUrl]);
@@ -41,10 +42,10 @@ const Ball = ({ icon }) => {
         preserveDrawingBuffer: true,
       }}
     >
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={<Loader2 />}>
         <hemisphereLight intensity={0.15} groundColor="black" />
         <Environment preset="city" />
-        <BallCanvas imgUrl={icon}  />
+        <BallCanvas imgUrl={icon} />
         <OrbitControls enableZoom={false} />
       </Suspense>
       <Preload all />
