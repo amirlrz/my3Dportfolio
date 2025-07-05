@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Tilt from "react-parallax-tilt";
-import { motion } from "framer-motion";
+//import { motion } from "framer-motion";
 
 function ProjectCard({ project }) {
   const {
@@ -16,17 +16,26 @@ function ProjectCard({ project }) {
 
   const [showMore, setShowMore] = useState(false);
   const [isLongText, setIsLongText] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
+  //const [isHovered, setIsHovered] = useState(false);
   const descRef = useRef(null);
 
   useEffect(() => {
-    if (descRef.current) {
-      const lineHeight = parseFloat(
-        getComputedStyle(descRef.current).lineHeight
-      );
-      const lines = descRef.current.scrollHeight / lineHeight;
-      setIsLongText(lines > 8);
-    }
+    const checkLines = () => {
+      if (descRef.current) {
+        const lineHeight = parseFloat(
+          getComputedStyle(descRef.current).lineHeight
+        );
+        const lines = descRef.current.scrollHeight / lineHeight;
+        setIsLongText(lines > 8);
+      }
+    };
+
+    checkLines();
+
+    // Add resize event listener
+    window.addEventListener("resize", checkLines);
+
+    return () => window.removeEventListener("resize", checkLines);
   }, []);
 
   return (
