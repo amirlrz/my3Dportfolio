@@ -45,7 +45,7 @@ function ProjectCard({ project }) {
         className={`bg-black-tertiary rounded-[20px] 
         min-h-[180px] flex justify-evenly items-center border  
         border-[#915eff]/55 w-[250px] transition-all duration-300 ease-in-out
-        ${showMore ? "h-[500px]" : "h-[350px]"} flex-col relative`}
+        ${showMore ? "h-[700px]" : "h-[350px]"} flex-col relative`}
       >
         <div className="relative w-full h-[140px] overflow-hidden rounded-xl mt-2">
           <img

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles";
-import ComputerCanvas from "./ComputerCanvas";
+//import ComputerCanvas from "./ComputerCanvas";
 import { motion } from "framer-motion";
 import BubbleProfile from "./IntroPart";
 function Hero() {
@@ -8,20 +8,16 @@ function Hero() {
     <section id="Home" className="relative w-full h-screen mx-auto">
       <div
         className={`${styles.paddingX} absolute 
-      inset-0 top-[120px] max-w-7xl mx-auto 
+      inset-0 top-[40px] max-w-7xl mx-auto 
       flex flex-row items-start gap-5
       `}
       >
-        <div
-          className="flex flex-col justify-center items-center
-mt-5
-"
-        >
+        <div className="flex flex-col justify-center items-center">
           <div className="w-4 h-4 rounded-full bg-[#915eff]" />
           <div className="w-1 sm:h-80 h-40 inset-0 bg-gradient-to-b from-[#915eff] via-[#26056d] via-[51%] to-[#000000] to-[90%] " />
         </div>
         <div>
-          <h1 className="text-white text-3xl font-bold mt-6">
+          <h1 className="text-white text-3xl font-bold ">
             Hi , I'm <span className="text-[#915eff]">Amir</span>
           </h1>
           <p className="mt-2">

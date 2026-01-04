@@ -61,11 +61,11 @@ Focused on state management, user interactions, and game logic using React hooks
 
     tags: [
       {
-        name: "react.js12",
+        name: "react.js",
         color: "#5a30b6",
       },
       {
-        name: "tailwind65",
+        name: "tailwind",
         color: "#06945b",
       },
       {
@@ -86,21 +86,55 @@ Focused on state management, user interactions, and game logic using React hooks
     hoverImg: "/assets/coffe2.png",
     tags: [
       {
-        name: "next.js1",
+        name: "next.js",
         color: "#5a30b6",
       },
       {
-        name: "tailwind22",
+        name: "tailwind",
         color: "#06945b",
       },
       {
-        name: "supabase12",
+        name: "supabase",
         color: "#8e0569",
       },
     ],
   },
   {
     id: 61,
+    title: "Quiz App",
+    description: `
+   a Quiz Game web application using Next.js and Material UI (MUI) And TypeScript , designed specifically for educational use.
+   reusable logic, and data fetching with Fetch API. Authentication and backend services are handled using Supabase, providing secure user management and real-time data storage.
+
+The platform allows teachers to create and manage quizzes by designing their own questions and answers. Key features include:
+Categorized quizzes based on different subjects or topics
+Support for image-based questions
+Multiple-choice questions with four answer options
+Teacher-defined exam topics and quiz structure
+Secure authentication for teachers and students
+At the end of each quiz, the system automatically evaluates student answers, compares results, and displays performance summaries. Teachers can then review and analyze students’ results based on the selected exam topics.
+    `,
+    img: "/assets/quiz.png",
+    Link: "https://quiz-app-chi-murex.vercel.app/",
+    source_code_link: "https://github.com/amirlrz/Quiz-app",
+    hoverImg: "/assets/quiz2.png",
+    tags: [
+      {
+        name: "next.js1",
+        color: "#5a30b6",
+      },
+      {
+        name: "Mui",
+        color: "#06945b",
+      },
+      {
+        name: "supabase",
+        color: "#8e0569",
+      },
+    ],
+  },
+  {
+    id: 62,
     title: " Internal ERP System",
     description: `
 Built a web-based ERP platform for internal staff operations using Next.js and Redux Toolkit.
