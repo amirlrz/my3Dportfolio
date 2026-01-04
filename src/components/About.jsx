@@ -38,7 +38,7 @@ function About() {
           id="overview"
           className="ml-2 text-3xl font-bold opacity-0 translate-y-8 "
         >
-          Overrview.
+          {"<Overrview />"}
         </h2>
       </div>
       <div className="mx-3">
@@ -53,17 +53,16 @@ function About() {
           Passionate about transforming ideas into high-performance web
           experiences. I specialize in:
           <br />
-          ⚡Core Skills: React.js, Next.js, JavaScript/TypeScript
-          <br />⚡ Styling: Tailwind CSS,Mui, responsive design principles
-          <br />⚡ Backend Familiarity: Basic Supabase/Firebase integration
-          <br />
-          ⚡WordPress: Custom theme development and API connections
+          ⚡Core Skills:JavaScript . React.js, Next.js, TypeScript
+          <br />⚡ Styling: Tailwind ,Mui, responsive design principles
+          <br />⚡ Backend Familiarity: Supabase/ WordPress API connections  
           <br />
           <span className="font-bold text-[#915eff]/100">
             What I bring to projects:
           </span>
           <br />• Clean, maintainable code with growing TypeScript adoption
           <br /> • Focus on performance optimization and accessibility basics
+          <br /> • Creating Reusable Components
           <br /> • Collaborative approach to problem-solving <br />• Quick
           learner for new technologies when needed
         </p>
@@ -71,9 +70,9 @@ function About() {
         <div className="mx-2">
           <h2 className="font-bold text-[#915eff]/90">Technical Toolkit:</h2> ▸
           Frontend: React.js | Next.js | JavaScript (ES6+) | TypeScript <br />▸
-          Styling: Tailwind CSS | CSS Modules <br />▸ CMS: WordPress (Custom
-          Themes, REST API, SEO Optimization) <br /> ▸ Backend Integration:
-          Supabase | WordPress REST API <br />▸ Tools: Git | Figma
+          Styling: Tailwind | CSS Modules | Mui | AntDesign <br />▸ CMS:
+          WordPress (REST API, SEO Optimization) <br /> ▸ Backend Integration:
+          Supabase | WordPress REST API <br />▸ Tools: Git | Azure | Figma
         </div>
       </div>
       <div

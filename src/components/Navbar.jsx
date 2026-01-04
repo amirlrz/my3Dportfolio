@@ -37,7 +37,7 @@ const Navbar = () => {
               href="#Home"
               className="text-neutral-400 font-bold text-xl hover:text-white transition-colors"
             >
-              Amir | Js Mastery
+              {"<Amir Lorzade />"}
             </a>
           </div>
 

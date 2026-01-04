@@ -188,7 +188,7 @@ export const workExperiences = [
   {
     id: 42,
     title: "Software Engineer Nika Farinegan Co. ",
-    duration: "17 March 2025 - Present ",
+    duration: "5 March 2025 - Present ",
     pos: "Developing an ERP system for power utilities using Next.js and TypeScript ",
     icon: "/assets/next.png",
   },
@@ -212,31 +212,43 @@ export const technologies = [
     icon: "/assets/figma.png",
   },
   {
-    name: "typescript.4",
+    name: "typescript.5",
     icon: "/assets/typescript.png",
   },
   {
-    name: "wordpress.5",
+    name: "wordpress.6",
     icon: "/assets/wordpress.png",
   },
   {
-    name: "js.6",
+    name: "js.7",
     icon: "/assets/javascript (1).png",
   },
   {
-    name: "css.7",
+    name: "css.8",
     icon: "/assets/css3.png",
   },
   {
-    name: "html.8",
+    name: "html.9",
     icon: "/assets/html.png",
   },
   {
-    name: "git.9",
+    name: "git.10",
     icon: "/assets/git.png",
   },
   {
-    name: "Threejs.10",
+    name: "Threejs.11",
     icon: "/assets/threejs-1.svg",
+  },
+  {
+    name: "mui.12",
+    icon: "/assets/mui.png",
+  },
+  {
+    name: "supabase.13",
+    icon: "/assets/supabase.webp",
+  },
+  {
+    name: "Microsoft_Azure.14",
+    icon: "/assets/Microsoft_Azure.png",
   },
 ];

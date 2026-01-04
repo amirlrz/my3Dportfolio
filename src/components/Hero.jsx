@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles";
 import ComputerCanvas from "./ComputerCanvas";
 import { motion } from "framer-motion";
+import BubbleProfile from "./IntroPart";
 function Hero() {
   return (
     <section id="Home" className="relative w-full h-screen mx-auto">
@@ -24,12 +25,18 @@ mt-5
             Hi , I'm <span className="text-[#915eff]">Amir</span>
           </h1>
           <p className="mt-2">
-            I develop 3D visuals , user <br className="sm:block" />
-            interfaces and Web applications
+            Frontend Developer passionate about creating{" "}
+            <br className="sm:block" />
+            elegant and scalable web applications
+            <br className="sm:block" />
+            with React and Next.js.
           </p>
         </div>
       </div>
-      <ComputerCanvas />
+      {/* <ComputerCanvas /> */}
+      <div className="mt-20">
+        <BubbleProfile />
+      </div>
       <div
         className="absolute max-sm:bottom-20  bottom-5 w-full flex justify-center
       items-center

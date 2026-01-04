@@ -108,7 +108,7 @@ function ProjectCard({ project }) {
         {/* External Link Button */}
         {Link && (
           <div
-            className="cursor-pointer absolute -right-5 -bottom-6 text-md py-1 text-green-600 border border-[#915eff]/55 hover:bg-black-300 hover:text-white rounded-full px-2 bg-black-tertiary z-10"
+            className="cursor-pointer w-full text-center  text-md py-1 text-green-600 border border-[#915eff]/55 hover:bg-black-300 hover:text-white rounded-full px-2 bg-black-tertiary z-10"
             onClick={() => window.open(Link, "_blank")}
           >
             <p>Go</p>

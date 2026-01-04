@@ -26,7 +26,7 @@ function Works() {
       >
         Projects.
       </h2>
-      <div className="flex flex- flex-wrap justify-start gap-10 mx-5 mt-10">
+      <div className="flex  flex-wrap justify-start gap-10 mx-10 mt-10">
         {myProjects.map((project) => (
           <ProjectCard project={project} key={project.id} />
         ))}

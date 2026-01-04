@@ -29,7 +29,7 @@ function Experience() {
           id="experience"
           className="ml-2 text-3xl font-bold opacity-0 translate-y-16 "
         >
-          Work Experience.
+          {"<Work Experience />"}
         </h2>
         <div className="mt-8 mx-2">
           <VerticalTimeline layout="1-column-left">
