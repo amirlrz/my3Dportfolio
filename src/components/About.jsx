@@ -47,7 +47,7 @@ function About() {
             Frontend Developer | React & Next.js
           </span>{" "}
           <br />
-          AmirMohamad, 26
+          AmirMohamad, 27
           <br />
           <br />
           Passionate about transforming ideas into high-performance web
@@ -55,7 +55,8 @@ function About() {
           <br />
           ⚡Core Skills:JavaScript . React.js, Next.js, TypeScript
           <br />⚡ Styling: Tailwind ,Mui, responsive design principles
-          <br />⚡ Backend Familiarity: Supabase/ WordPress API connections  
+          <br />⚡ Backend Familiarity: Next.js / Supabase
+          <br />⚡ DataBase: Mongo DB / Sql Server
           <br />
           <span className="font-bold text-[#915eff]/100">
             What I bring to projects:
@@ -72,7 +73,8 @@ function About() {
           Frontend: React.js | Next.js | JavaScript (ES6+) | TypeScript <br />▸
           Styling: Tailwind | CSS Modules | Mui | AntDesign <br />▸ CMS:
           WordPress (REST API, SEO Optimization) <br /> ▸ Backend Integration:
-          Supabase | WordPress REST API <br />▸ Tools: Git | Azure | Figma
+          Suext.js / Supabase <br />▸ Tools: Git | Azure | Figma | Adobe
+          Photoshop | Adobe After Effect
         </div>
       </div>
       <div

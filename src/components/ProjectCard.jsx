@@ -42,7 +42,7 @@ function ProjectCard({ project }) {
     <Tilt glareEnable={false} tiltEnable={window.innerWidth > 768}>
       <div
         key={id}
-        className={`bg-black-tertiary rounded-[20px] 
+        className={`bg-[#030014] rounded-[20px] 
         min-h-[180px] flex justify-evenly items-center border  
         border-[#915eff]/55 w-[250px] transition-all duration-300 ease-in-out
         ${showMore ? "h-[700px]" : "h-[350px]"} flex-col relative`}

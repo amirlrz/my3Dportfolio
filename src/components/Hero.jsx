@@ -1,12 +1,10 @@
 import React from "react";
-import styles from "../styles";
-//import ComputerCanvas from "./ComputerCanvas";
 import { motion } from "framer-motion";
 import BubbleProfile from "./IntroPart";
 function Hero() {
   return (
     <section id="Home" className="relative w-full h-screen mx-auto">
-      <div
+      {/* <div
         className={`${styles.paddingX} absolute 
       inset-0 top-[40px] max-w-7xl mx-auto 
       flex flex-row items-start gap-5
@@ -28,13 +26,13 @@ function Hero() {
             with React and Next.js.
           </p>
         </div>
-      </div>
+      </div> */}
       {/* <ComputerCanvas /> */}
-      <div className="mt-20">
+      <div>
         <BubbleProfile />
       </div>
       <div
-        className="absolute max-sm:bottom-20  bottom-5 w-full flex justify-center
+        className="absolute max-sm:bottom-20 z-40  bottom-5 w-full flex justify-center
       items-center
       "
       >

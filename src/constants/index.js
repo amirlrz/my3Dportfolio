@@ -81,7 +81,7 @@ Focused on state management, user interactions, and game logic using React hooks
     Next.js e-commerce with Supabase (auth/database), WordPress CMS (Api), and Zustand cart. SSR/CSR SEO, Tailwind styling, real-time updates. Manages products, users, payments ,products basket.
     `,
     img: "/assets/giyumeh1.png",
-    Link: "https://lrz-store.liara.run",
+    Link: "https://coffee-store-xi.vercel.app",
     source_code_link: "https://github.com/amirlrz/Coffee-store",
     hoverImg: "/assets/coffe2.png",
     tags: [
@@ -200,7 +200,7 @@ export const workExperiences = [
   {
     id: 20,
     pos: "Internship",
-    duration: "June 2022 - August 2022",
+    duration: "June 2021 - August 2021",
     title: "Fouland Technique International Company (Isfahan)",
     icon: "/assets/tailwind.png",
   },
@@ -208,21 +208,21 @@ export const workExperiences = [
     id: 30,
 
     pos: "Bootcamp Course",
-    duration: "June 2024 - December 2024",
+    duration: "June 2022 - December 2022",
     title: "Isfahan Iron Company (Isfahan)",
     icon: "/assets/javascript (1).png",
   },
   {
     id: 40,
     pos: "SEO Specialist & Website Administrator",
-    duration: "March 2024 -  February 2025 ",
+    duration: "March 2023 -  February 2024 ",
     title: "Giyumeh Coffee Production (Isfahan)",
     icon: "/assets/wordpress.png",
   },
   {
     id: 42,
     title: "Software Engineer Nika Farinegan Co. ",
-    duration: "5 March 2025 - Present ",
+    duration: "5 March 2023 - 20 May 2026 ",
     pos: "Developing an ERP system for power utilities using Next.js and TypeScript ",
     icon: "/assets/next.png",
   },
