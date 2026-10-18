@@ -1,11 +1,11 @@
-import { PointMaterial, Points, Preload } from "@react-three/drei";
+import { PointMaterial, Points } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as random from "maath/random/dist/maath-random.esm"; // Correct import path
-import React, { Suspense, useRef } from "react";
+import React, { Suspense, useRef, useState } from "react";
 
 function Stars(props) {
   const ref = useRef();
-  const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
+  const [sphere] = useState(() => random.inSphere(new Float32Array(1500 * 3), { radius: 1.2 }));
 
   // Add animation
   useFrame((state, delta) => {
@@ -31,11 +31,10 @@ function Stars(props) {
 const StarsCanvas = () => {
   return (
     <div className="w-full h-auto absolute inset-0 z-[-1]">
-      <Canvas camera={{ position: [0, 0, 1] }}>
+      <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />
         </Suspense>
-        <Preload all />
       </Canvas>
     </div>
   );

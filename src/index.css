@@ -13,6 +13,62 @@ body {
   font-family: 'General Sans', sans-serif;
 }
 
+.project-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+}
+
+/* Keep the hero actions within the first screen on shorter displays. */
+@media (max-height: 700px) {
+  .profile-hero {
+    padding-top: 88px;
+    padding-bottom: 24px;
+  }
+
+  .profile-hero .profile-portrait {
+    width: clamp(80px, 18svh, 128px);
+    height: clamp(80px, 18svh, 128px);
+  }
+
+  .profile-hero .profile-status {
+    margin-bottom: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .profile-hero .profile-identity,
+  .profile-hero .profile-actions {
+    margin-top: 16px;
+  }
+
+  .profile-hero .profile-identity h1 {
+    font-size: clamp(24px, 4vw, 36px);
+    line-height: 1.15;
+  }
+
+  .profile-hero .profile-identity p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+/* Desktop keeps a prominent portrait even on shorter laptop displays. */
+@media (min-width: 1024px) {
+  .profile-hero .profile-portrait {
+    width: clamp(160px, 26svh, 288px);
+    height: clamp(160px, 26svh, 288px);
+  }
+
+  .profile-hero .profile-identity {
+    max-width: 56rem;
+  }
+
+  .profile-hero .profile-identity h1 {
+    font-size: clamp(40px, 4.2vw, 60px);
+    line-height: 1.1;
+  }
+}
+
 @layer utilities {
   .c-space {
     @apply sm:px-10 px-5;
@@ -21,6 +77,31 @@ body {
   .head-text {
     @apply sm:text-4xl text-3xl font-semibold text-gray_gradient;
   }
+  
+@keyframes profileFloat {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0);
+  }
+}
+
+.profile-float {
+  animation: profileFloat 5s ease-in-out infinite;
+}
+
+.profile-float-slow {
+  animation: profileFloat 6.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile-float,
+  .profile-float-slow {
+    animation: none !important;
+  }
+}
+
 
   .nav-ul {
     @apply flex flex-col items-center gap-4 sm:flex-row md:gap-6 relative z-20;

@@ -3,36 +3,12 @@ import { motion } from "framer-motion";
 import BubbleProfile from "./IntroPart";
 function Hero() {
   return (
-    <section id="Home" className="relative w-full h-screen mx-auto">
-      {/* <div
-        className={`${styles.paddingX} absolute 
-      inset-0 top-[40px] max-w-7xl mx-auto 
-      flex flex-row items-start gap-5
-      `}
-      >
-        <div className="flex flex-col justify-center items-center">
-          <div className="w-4 h-4 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm:h-80 h-40 inset-0 bg-gradient-to-b from-[#915eff] via-[#26056d] via-[51%] to-[#000000] to-[90%] " />
-        </div>
-        <div>
-          <h1 className="text-white text-3xl font-bold ">
-            Hi , I'm <span className="text-[#915eff]">Amir</span>
-          </h1>
-          <p className="mt-2">
-            Frontend Developer passionate about creating{" "}
-            <br className="sm:block" />
-            elegant and scalable web applications
-            <br className="sm:block" />
-            with React and Next.js.
-          </p>
-        </div>
-      </div> */}
-      {/* <ComputerCanvas /> */}
+    <section id="Home" className="relative w-full min-h-[100svh] mx-auto">
       <div>
         <BubbleProfile />
       </div>
       <div
-        className="absolute max-sm:bottom-20 z-40  bottom-5 w-full flex justify-center
+        className="absolute max-sm:hidden [@media(max-height:700px)]:hidden z-40 bottom-3 w-full flex justify-center
       items-center
       "
       >

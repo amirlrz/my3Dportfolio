@@ -1,6 +1,5 @@
 import React from "react";
 import { technologies } from "../constants";
-import BallCanvas from "./BallCanvas";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -37,8 +36,8 @@ function Tech() {
      justify-center flex mt-24 flex-wrap flex-row"
         >
           {technologies.map((technology) => (
-            <div className="w-20 h-20" key={technology.name}>
-              <BallCanvas icon={technology.icon} key={technology.name} />
+            <div className="w-20 h-20 flex items-center justify-center rounded-full border border-violet-400/30 bg-white/5" key={technology.name}>
+              <img src={technology.icon} alt={technology.name.replace(/\.\d+$/, "")} loading="lazy" decoding="async" width="48" height="48" className="h-12 w-12 object-contain" />
             </div>
           ))}
         </div>

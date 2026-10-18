@@ -18,6 +18,190 @@ export const navLinks = [
 
 export const myProjects = [
   {
+    id: 62,
+    title: " Internal ERP System",
+    description: `
+Built a web-based ERP platform for internal staff operations using Next.js and Redux Toolkit.
+Developed responsive UI components and managed global state for smooth user experience.
+Integrated REST APIs for authentication, data management, and internal workflows.
+Contributed to digitizing administrative processes, improving efficiency and scalability.
+    `,
+    img: "/assets/ERpDarkDash.png",
+    images: [
+      "/assets/ERpDarkDash.png",
+      "/assets/dark2.png",
+      "/assets/erp1.JPG",
+    ],
+    hoverImg: "/assets/dark2.png",
+    tags: [
+      {
+        name: "next.js",
+        color: "#5a30b6",
+      },
+      {
+        name: "mui",
+        color: "#06945b",
+      },
+      {
+        name: "redux",
+        color: "#8e0569",
+      },
+    ],
+  },
+
+  {
+    id: 60,
+    title: "Coffee Store",
+    description: `
+    Designed and developed a responsive coffee e-commerce website for Giyumeh Roastery. The project includes a product catalog with search and category filtering, product cards, brand introduction sections, and a clean modern interface. The website was built with a focus on usability, responsive design, and providing an engaging shopping experience for specialty coffee customers.
+    `,
+    videos: ["/assets/videoCoffee.mp4"],
+    img: "/assets/giyumeh1.png",
+    Link: "https://coffee-store-xi.vercel.app",
+    source_code_link: "https://github.com/amirlrz/Coffee-store",
+    hoverImg: "/assets/coffe2.png",
+    // Place the video in public/assets, then add its path here.
+    // Example: videos: ["/assets/coffee-store-demo.mp4"],
+
+    tags: [
+      {
+        name: "next.js",
+        color: "#5a30b6",
+      },
+      {
+        name: "tailwind",
+        color: "#06945b",
+      },
+      {
+        name: "supabase",
+        color: "#8e0569",
+      },
+    ],
+  },
+  {
+    id: 61,
+    title: "Quiz App",
+    description: `
+   a Quiz Game web application using Next.js and Material UI (MUI) And TypeScript , designed specifically for educational use.
+   reusable logic, and data fetching with Fetch API. Authentication and backend services are handled using Supabase, providing secure user management and real-time data storage.
+
+The platform allows teachers to create and manage quizzes by designing their own questions and answers. Key features include:
+Categorized quizzes based on different subjects or topics
+Support for image-based questions
+Multiple-choice questions with four answer options
+Teacher-defined exam topics and quiz structure
+Secure authentication for teachers and students
+At the end of each quiz, the system automatically evaluates student answers, compares results, and displays performance summaries. Teachers can then review and analyze students’ results based on the selected exam topics.
+    `,
+    img: "/assets/Ghonche2.png",
+    images: [
+      "/assets/test2.png",
+      "/assets/Ghonche.png",
+      "/assets/quizQuestion.png",
+      "/assets/b.png",
+    ],
+    Link: "https://quiz-app-chi-murex.vercel.app/",
+    source_code_link: "https://github.com/amirlrz/Quiz-app",
+    hoverImg: "/assets/quiz2.png",
+    tags: [
+      {
+        name: "next.js1",
+        color: "#5a30b6",
+      },
+      {
+        name: "Mui",
+        color: "#06945b",
+      },
+      {
+        name: "supabase",
+        color: "#8e0569",
+      },
+    ],
+  },
+
+  {
+    id: 63,
+    title: " Toronto Classified Ads & Housing Platform",
+    description: `Designed and developed a responsive classified ads platform for jobs and housing opportunities in Toronto. Users can browse and search listings by category and location, view listing details, like and comment on posts, and communicate directly through an integrated messaging system with the ability to send and reply to messages. The platform supports Persian and English content and provides a simple, user-friendly experience for the local community.`,
+    img: "/assets/heroT.png",
+    images: [
+      "/assets/heroT.png",
+      "/assets/2.png",
+      "/assets/dashbord.png",
+      "/assets/signup.png",
+      "/assets/5.png",
+      "/assets/6.png",
+      "/assets/messageDAsh.png",
+    ],
+    hoverImg: "/assets/messageDAsh.png",
+    tags: [
+      {
+        name: "next.js",
+        color: "#5a30b6",
+      },
+      {
+        name: "mui",
+        color: "#06945b",
+      },
+      {
+        name: "redux",
+        color: "#8e0569",
+      },
+    ],
+  },
+  {
+    id: 64,
+    title: " Giyumeh Coffee – WordPress E-Commerce Development & SEO",
+    description: `
+    Role: WordPress Developer & SEO Specialist
+    eveloped and customized a WordPress-based e-commerce website for a specialty coffee brand, implementing custom code to enhance the website's design, functionality, and user experience.
+
+Led the website's SEO strategy, including technical SEO, on-page optimization, keyword research, content optimization, and internal linking to improve organic visibility and attract potential customers.
+
+Key Achievement: Increased monthly sales from 20 to 150 within just 6 months, achieving 650% growth (7.5×) through website improvements and SEO optimization.
+
+Key Responsibilities:
+
+WordPress and WooCommerce development
+
+Custom theme styling and functionality
+
+Responsive website design
+
+Technical and on-page SEO
+
+SEO content strategy and internal linking
+
+Website performance and user experience optimization
+
+Technologies: WordPress, WooCommerce, PHP, HTML, CSS, JavaScript, Elementor Pro, SEO Tools
+    `,
+    img: "/assets/Word1.png",
+    images: [
+      "/assets/Word1.png",
+      "/assets/Word2.png",
+      "/assets/Word3.png",
+      "/assets/Word4.png",
+      "/assets/Word5.png",
+    ],
+    hoverImg: "/assets/Word1.png",
+    tags: [
+      {
+        name: "wordpress",
+        color: "#5a30b6",
+      },
+      {
+        name: "css",
+        color: "#5a30b6",
+      },
+      {
+        name: "Java Script",
+        color: "#5a30b6",
+      },
+    ],
+  },
+
+  {
     id: 50,
     title: "weather App",
     description: `
@@ -70,91 +254,6 @@ Focused on state management, user interactions, and game logic using React hooks
       },
       {
         name: "manually created data",
-        color: "#8e0569",
-      },
-    ],
-  },
-  {
-    id: 60,
-    title: "Coffee Store",
-    description: `
-    Next.js e-commerce with Supabase (auth/database), WordPress CMS (Api), and Zustand cart. SSR/CSR SEO, Tailwind styling, real-time updates. Manages products, users, payments ,products basket.
-    `,
-    img: "/assets/giyumeh1.png",
-    Link: "https://coffee-store-xi.vercel.app",
-    source_code_link: "https://github.com/amirlrz/Coffee-store",
-    hoverImg: "/assets/coffe2.png",
-    tags: [
-      {
-        name: "next.js",
-        color: "#5a30b6",
-      },
-      {
-        name: "tailwind",
-        color: "#06945b",
-      },
-      {
-        name: "supabase",
-        color: "#8e0569",
-      },
-    ],
-  },
-  {
-    id: 61,
-    title: "Quiz App",
-    description: `
-   a Quiz Game web application using Next.js and Material UI (MUI) And TypeScript , designed specifically for educational use.
-   reusable logic, and data fetching with Fetch API. Authentication and backend services are handled using Supabase, providing secure user management and real-time data storage.
-
-The platform allows teachers to create and manage quizzes by designing their own questions and answers. Key features include:
-Categorized quizzes based on different subjects or topics
-Support for image-based questions
-Multiple-choice questions with four answer options
-Teacher-defined exam topics and quiz structure
-Secure authentication for teachers and students
-At the end of each quiz, the system automatically evaluates student answers, compares results, and displays performance summaries. Teachers can then review and analyze students’ results based on the selected exam topics.
-    `,
-    img: "/assets/quiz.png",
-    Link: "https://quiz-app-chi-murex.vercel.app/",
-    source_code_link: "https://github.com/amirlrz/Quiz-app",
-    hoverImg: "/assets/quiz2.png",
-    tags: [
-      {
-        name: "next.js1",
-        color: "#5a30b6",
-      },
-      {
-        name: "Mui",
-        color: "#06945b",
-      },
-      {
-        name: "supabase",
-        color: "#8e0569",
-      },
-    ],
-  },
-  {
-    id: 62,
-    title: " Internal ERP System",
-    description: `
-Built a web-based ERP platform for internal staff operations using Next.js and Redux Toolkit.
-Developed responsive UI components and managed global state for smooth user experience.
-Integrated REST APIs for authentication, data management, and internal workflows.
-Contributed to digitizing administrative processes, improving efficiency and scalability.
-    `,
-    img: "/assets/erp1.JPG",
-    hoverImg: "/assets/erp2.JPG",
-    tags: [
-      {
-        name: "next.js",
-        color: "#5a30b6",
-      },
-      {
-        name: "mui",
-        color: "#06945b",
-      },
-      {
-        name: "redux",
         color: "#8e0569",
       },
     ],
