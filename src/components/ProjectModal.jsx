@@ -89,8 +89,8 @@ export default function ProjectModal({ project, returnFocusRef, onClose }) {
           </div>
         </section>
         <div className="flex flex-wrap gap-3 border-t border-white/10 pt-5">
-          {project.Link && <a href={project.Link} target="_blank" rel="noopener noreferrer" className="rounded-full bg-violet-600 px-5 py-3 text-sm font-medium hover:bg-violet-500">Visit live site &nearr;</a>}
-          {project.source_code_link && <a href={project.source_code_link} target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/20 px-5 py-3 text-sm hover:bg-white/10">View source code &nearr;</a>}
+          {project.Link && <a href={project.Link} target="_blank" rel="noopener noreferrer" className="rounded-full bg-violet-600 px-5 py-3 text-sm font-medium hover:bg-violet-500">Visit live site </a>}
+          {project.source_code_link && <a href={project.source_code_link} target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/20 px-5 py-3 text-sm hover:bg-white/10">View source code</a>}
         </div>
       </div>
     </dialog>, document.body
