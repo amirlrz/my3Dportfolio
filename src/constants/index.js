@@ -180,9 +180,9 @@ Technologies: WordPress, WooCommerce, PHP, HTML, CSS, JavaScript, Elementor Pro,
     images: [
       "/assets/Word1.png",
       "/assets/Word2.png",
-      "/assets/Word3.png",
-      "/assets/Word4.png",
-      "/assets/Word5.png",
+      "/assets/Word33.png",
+      "/assets/Word44.png",
+      "/assets/Word55.png",
     ],
     hoverImg: "/assets/Word1.png",
     tags: [
@@ -367,10 +367,6 @@ export const technologies = [
   {
     name: "git.10",
     icon: "/assets/git.png",
-  },
-  {
-    name: "Threejs.11",
-    icon: "/assets/threejs-1.svg",
   },
   {
     name: "mui.12",
